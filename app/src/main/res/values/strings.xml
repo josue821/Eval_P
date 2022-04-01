@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Evalp</string>
+    <string name="txt_text">Cuestionario</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="enviar">Enviar</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="gmail">Gmail</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="Genero" />
+    <string name="todo">TODO</string>
+</resources>

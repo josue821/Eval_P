@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.cuestionario"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/animated_vector"
+        android:layout_width="800dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/vector" />
+
+    <TextView
+        android:id="@+id/Inicio"
+        style="@style/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/animated_vector"
+        android:text="@string/txt_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Inicio"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/PersonName"
+            style="@style/form_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nombres"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Person"
+            style="@style/form_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/apellidos"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
+
+
+        <EditText
+            android:id="@+id/EmailAddress"
+            style="@style/form_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/gmail"
+            android:inputType="textEmailAddress"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Password"
+            style="@style/form_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/contrase_a"
+            android:inputType="textPassword"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/genero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Genero" />
+
+        <RadioGroup
+            android:id="@+id/opciones_sexo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_below="@id/genero"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <RadioButton
+                android:id="@+id/radio_masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/baloo_bhaijaan"
+                android:text="@string/masculino" />
+
+            <RadioButton
+                android:id="@+id/radio_femenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhaijaan"
+                android:text="@string/femenino" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/baloo_bhaijaan"
+            android:text="@string/enviar" />
+    </LinearLayout>
+
+</RelativeLayout>

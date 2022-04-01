@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="title_text">
+        <item name="android:textSize">@dimen/Text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/material_dynamic_secondary30</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:fontFamily">@font/chango</item>
+    </style>
+
+    <dimen name="Text_title" >30sp</dimen>
+    <dimen name="text_option_menu">16sp</dimen>
+
+    <style name="form_input">
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:fontFamily">@font/baloo_bhaijaan</item>
+    </style>
+</resources>
